@@ -1,0 +1,7 @@
+admin/目录：bin目录中*.sh的组合使用，如admin/restart.sh会调用bin/stop.sh, bin/start.sh
+bin/目录：提供单一功能，不涉及组合，如bin/stop.sh作用让进程停止运行，bin/start.sh让进程启动
+conf/目录：配置文件放在这里
+data/目录：数据文件，如号码包文件放在这里
+lib/目录：so放在这里
+log/目录：日志文件放在这里
+module/目录：代码逻辑放在这里

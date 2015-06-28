@@ -1,0 +1,2 @@
+1、JceDisplayer.h,Jce.h,JceType.h有什么用？用于打包操作;
+2、pdu_header.h有什么用？作用只有一个：为了让包含jce生成的.h文件可以编译通过(因为.h中包含这样的函数：int Encode(uint8_t * pui_buff, int32_t * pi_buff_len, pdu_protocol_header * pdu_header)，实际上用不上，即没有实现，去掉也无妨。为什么不去掉？每次通过jce生成.h还要手动去掉太麻烦。为什么不修改jce生成.h的工具，不让ta生成这些无用的代码？因为jce生成.h的工具没有拿到源码)。

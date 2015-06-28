@@ -1,0 +1,53 @@
+PATH_ATHENA_PRJ=$(TOP_DIR)
+BASE_LIB_DIR = $(TOP_DIR)/comm/base_lib/
+
+CFLAGS:=$(subst -z defs, -Wno-unused-variable,$(CFLAGS)) -m32 -Wall -Werror
+
+RED = \\e[1m\\e[31m
+RESET = \\e[m
+GREEN = \\e[1m\\e[32m
+
+#comm dir
+INC_NETWORK= -I$(BASE_LIB_DIR)/Athena_lib/network/include/
+LIB_NETWORK = -L$(BASE_LIB_DIR)/Athena_lib/network/lib/ -lAthena_network.1.0
+
+INC_OPEN_SOURCE_MYSQL= -I$(BASE_LIB_DIR)/extern/open_source_lib/mysql-5.5.40/include/
+LIB_OPEN_SOURCE_MYSQL= -L$(BASE_LIB_DIR)/extern/open_source_lib/mysql-5.5.40/lib/ -lmysqlclient
+
+INC_MYSQL = -I$(BASE_LIB_DIR)/Athena_lib/Athena_mysql/include/
+LIB_MYSQL = -L$(BASE_LIB_DIR)/Athena_lib/Athena_mysql/lib -lAthena_mysql_client
+
+INC_CONVERT_ENCODING = -I$(BASE_LIB_DIR)/extern/convert_encoding/include/
+LIB_CONVERT_ENCODING = -L$(BASE_LIB_DIR)/extern/convert_encoding/lib/ -lconvert_encoding
+
+INC_JSON = -I$(BASE_LIB_DIR)/extern/format/json/include/
+LIB_JSON = -L$(BASE_LIB_DIR)/extern/format/json/lib/ -ljson
+
+#comm/util dir begin
+INC_COMMLOG = -I$(TOP_DIR)/comm/utils/commlog/include
+LIB_COMMLOG = -L$(TOP_DIR)/comm/utils/commlog/lib -lcommlog
+
+INC_CONFIG = -I$(TOP_DIR)/comm/utils/configure/include
+LIB_CONFIG = -L$(TOP_DIR)/comm/utils/configure/lib -lconfig
+
+INC_FILE_API = -I$(TOP_DIR)/comm/utils/file_api/include
+LIB_FILE_API = -L$(TOP_DIR)/comm/utils/file_api/lib/ -lfile_api
+
+INC_STRING_API = -I$(TOP_DIR)/comm/utils/string_api/include
+LIB_STRING_API = -L$(TOP_DIR)/comm/utils/string_api/lib -lstring_api
+#comm/util dir end
+
+INC_HTTP_HELPER_BASE = -I$(BASE_LIB_DIR)/extern/open_source_lib/http_helper_base/cgihtml/
+LIB_HTTP_HELPER_BASE = -L$(BASE_LIB_DIR)/extern/open_source_lib/http_helper_base/lib -lcgihtml
+
+INC_HTTP_HELPER = -I$(BASE_LIB_DIR)/extern/http_helper/tlib/
+LIB_HTTP_HELPER = -L$(BASE_LIB_DIR)/extern/http_helper/lib/ -ltlib
+
+INC_CGI_IO_HELPER = -I$(BASE_LIB_DIR)/Athena_lib/cgi_io_helper/tlib/
+LIB_CGI_IO_HELPER = -L$(BASE_LIB_DIR)/Athena_lib/cgi_io_helper/lib/ -ltlib
+
+INC_JCE = -I$(BASE_LIB_DIR)/extern/jce/ -I$(BASE_LIB_DIR)/extern/
+
+INC_ATHENA_NETWORK_PARSER = -I$(BASE_LIB_DIR)/Athena_lib/Athena_base_protocol/include/
+
+INC_ATHENA_NETWORK_PROTOCOL = -I$(BASE_LIB_DIR)/Athena_lib/Athena_base_protocol/include/

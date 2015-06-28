@@ -1,0 +1,2 @@
+format:means jason, xml format, is used for cgi output to front-end
+http_helper: means http input api, such as genenv(), is used for front-end input to cgi

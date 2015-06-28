@@ -1,0 +1,51 @@
+===== Information about the build process: =====
+Build was run at 2014-09-08 12:15:02 on host 'loki32'
+
+Build was done on  Linux-2.6.9-89.0.26.ELsmp using i686
+Build was done using cmake 2.8.5 
+
+===== Compiler flags used (from the 'sql/' subdirectory): =====
+# compile C with /usr/local/gcc-4.3.4/bin/gcc
+# compile CXX with /usr/local/gcc-4.3.4/bin/gcc
+C_FLAGS =  -fPIC -Wall -O3 -g -static-libgcc -fno-omit-frame-pointer -fno-strict-aliasing -DDBUG_OFF -DMY_PTHREAD_FASTMUTEX=1 -I/export/home/pb2/build/sb_0-13157587-1410170405.42/release/include -I/export/home/pb2/build/sb_0-13157587-1410170405.42/mysql-5.5.40/include -I/export/home/pb2/build/sb_0-13157587-1410170405.42/mysql-5.5.40/sql -I/export/home/pb2/build/sb_0-13157587-1410170405.42/mysql-5.5.40/regex -I/export/home/pb2/build/sb_0-13157587-1410170405.42/mysql-5.5.40/zlib -I/export/home/pb2/build/sb_0-13157587-1410170405.42/mysql-5.5.40/extra/yassl/include -I/export/home/pb2/build/sb_0-13157587-1410170405.42/mysql-5.5.40/extra/yassl/taocrypt/include -I/export/home/pb2/build/sb_0-13157587-1410170405.42/release/sql    -DHAVE_YASSL -DYASSL_PURE_C -DYASSL_PREFIX -DHAVE_OPENSSL -DMULTI_THREADED
+C_DEFINES = -DHAVE_CONFIG_H -DMYSQL_SERVER -DHAVE_EVENT_SCHEDULER
+CXX_FLAGS = -fno-exceptions  -fPIC -Wall -Wno-unused-parameter -fno-implicit-templates -fno-exceptions -fno-rtti -O3 -g -static-libgcc -fno-omit-frame-pointer -fno-strict-aliasing -DDBUG_OFF -DMY_PTHREAD_FASTMUTEX=1 -I/export/home/pb2/build/sb_0-13157587-1410170405.42/release/include -I/export/home/pb2/build/sb_0-13157587-1410170405.42/mysql-5.5.40/include -I/export/home/pb2/build/sb_0-13157587-1410170405.42/mysql-5.5.40/sql -I/export/home/pb2/build/sb_0-13157587-1410170405.42/mysql-5.5.40/regex -I/export/home/pb2/build/sb_0-13157587-1410170405.42/mysql-5.5.40/zlib -I/export/home/pb2/build/sb_0-13157587-1410170405.42/mysql-5.5.40/extra/yassl/include -I/export/home/pb2/build/sb_0-13157587-1410170405.42/mysql-5.5.40/extra/yassl/taocrypt/include -I/export/home/pb2/build/sb_0-13157587-1410170405.42/release/sql    -DHAVE_YASSL -DYASSL_PURE_C -DYASSL_PREFIX -DHAVE_OPENSSL -DMULTI_THREADED
+CXX_DEFINES = -DHAVE_CONFIG_H -DMYSQL_SERVER -DHAVE_EVENT_SCHEDULER
+
+Pointer size: 4
+
+===== Feature flags used: =====
+-- Cache values
+CMAKE_BUILD_TYPE:STRING=RelWithDebInfo
+CMAKE_INSTALL_PREFIX:PATH=/usr/local/mysql
+COMMUNITY_BUILD:BOOL=ON
+ENABLED_PROFILING:BOOL=ON
+ENABLE_DEBUG_SYNC:BOOL=ON
+ENABLE_GCOV:BOOL=OFF
+FEATURE_SET:STRING=community
+INSTALL_LAYOUT:STRING=STANDALONE
+MYSQL_DATADIR:PATH=/usr/local/mysql/data
+MYSQL_MAINTAINER_MODE:BOOL=OFF
+TMPDIR:PATH=P_tmpdir
+WITH_ARCHIVE_STORAGE_ENGINE:BOOL=ON
+WITH_ASAN:BOOL=OFF
+WITH_BLACKHOLE_STORAGE_ENGINE:BOOL=ON
+WITH_DEBUG:BOOL=OFF
+WITH_EMBEDDED_SERVER:BOOL=ON
+WITH_EMBEDDED_SHARED_LIBRARY:BOOL=OFF
+WITH_EXAMPLE_STORAGE_ENGINE:BOOL=OFF
+WITH_EXTRA_CHARSETS:STRING=all
+WITH_FEDERATED_STORAGE_ENGINE:BOOL=ON
+WITH_INNOBASE_STORAGE_ENGINE:BOOL=ON
+WITH_LIBEDIT:BOOL=OFF
+WITH_LIBWRAP:BOOL=OFF
+WITH_PARTITION_STORAGE_ENGINE:BOOL=ON
+WITH_PERFSCHEMA_STORAGE_ENGINE:BOOL=ON
+WITH_PIC:BOOL=ON
+WITH_READLINE:BOOL=ON
+WITH_SSL:STRING=bundled
+WITH_UNIT_TESTS:BOOL=ON
+WITH_VALGRIND:BOOL=OFF
+WITH_ZLIB:STRING=bundled
+
+===== EOF =====

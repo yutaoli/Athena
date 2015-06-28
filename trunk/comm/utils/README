@@ -1,0 +1,6 @@
+commlog：log相关api
+configure：配置相关api
+date：时间、计时相关api
+share_mem：处理共享内存相关api
+string_api：string相关api，如SplitString(string, char, vector<string>& )
+file_api：文件系统相关api，如IsFileExist(const char *filename)，又如ListDir(const char *dir_name)

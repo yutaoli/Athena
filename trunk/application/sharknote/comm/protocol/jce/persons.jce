@@ -1,0 +1,29 @@
+module PERSON
+{
+	struct CommRspFields 
+	{
+		0 require int retcode;
+		1 require string errmsg;
+	};
+
+	struct Person
+	{
+		0 require unsigned int personid;
+		1 require string lastname;
+		2 require string firstname;
+		3 require string address;
+		4 require string telephone;
+		5 require string city;
+	};
+
+	struct stGetPersonInfoReq
+	{
+		0 require unsigned int personid;
+	};	
+
+	struct stGetPersonInfoRsp
+	{
+		0 require CommRspFields base;
+		1 require Person person_info;
+	};
+};
